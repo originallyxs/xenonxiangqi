@@ -2,6 +2,10 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <title>公告栏</title>
 <style>
 @font-face {
@@ -21,6 +25,7 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
+  user-select:none;
 }
 html,body{
   background:transparent;
@@ -29,10 +34,10 @@ html,body{
   font-family:customFont, system-ui, sans-serif;
 }
 p{
-  text-indent: 2em;    /* 首行缩进2汉字 */
+  text-indent: 2em; 
   font-weight:400;
-  line-height:1.65;    /* ✨正文行距，1.6‑1.7阅读舒适 */
-  margin: 0.4em 0;
+  line-height:1.45; 
+  margin: 3px 0;
 }
 b, strong{
   font-weight:700;
@@ -51,10 +56,10 @@ div{
   padding:0;
 }
 .divider{
-  height:2px; /* ✨分割线高度，你可以改成1px/2px/3px */
+  height:1px; 
   width:100%;
   background:rgba(255,255,255,0.35);
-  margin:14px 0; /* ✨分割线上下外边距，控制公告区块间距 */
+  margin:12px 0;
 }
 </style>
 </head>
@@ -72,15 +77,6 @@ div{
 <h2>Beta1 版本重磅发布！</h2>
 <p>经过开发团队 11 天的迭代打磨，游戏首个内测版本正式制作完成，欢迎体验测试。</p>
 <p>参与内测的人员<b>严禁将游戏安装包、体验链接外传，违者将直接取消内测资格</b>。</p>
-
-<div class="divider"></div>
-
-<h2>特别鸣谢</h2>
-<p>GarboMuffin 等 TurboWarp 开发者：XenonXiangqi 的诞生离不开 TurboWarp 和 Scratch。</p>
-<p>Cloudflare：提供了网络支持。</p>
-<p>GitHub：提供了建站支持。</p>
-<p>CodingHou：提供灵感。</p>
-<p>还有你：帮助我们改进作品。</p>
 
 </body>
 </html>
