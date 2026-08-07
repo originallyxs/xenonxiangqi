@@ -29,37 +29,49 @@ html,body{
   font-family:customFont, system-ui, sans-serif;
 }
 p{
-  text-indent: 2em;
+  text-indent: 2em;    /* 首行缩进2汉字 */
   font-weight:400;
+  line-height:1.65;    /* ✨正文行距，1.6‑1.7阅读舒适 */
+  margin: 0.4em 0;
 }
 b, strong{
   font-weight:700;
 }
-h1, h2{
-  font-size:22px;
+h1{
+  font-size:24px;
   font-weight:700;
-  margin-bottom:12px;
+  margin-bottom:8px;
+}
+h2{
+  font-size:20px;
+  font-weight:700;
+  margin:10px 0 6px 0;
 }
 div{
-  padding:8px 0;
+  padding:0;
 }
 .divider{
-  height:1px;
+  height:2px; /* ✨分割线高度，你可以改成1px/2px/3px */
   width:100%;
   background:rgba(255,255,255,0.35);
-  margin:8px 0;
+  margin:14px 0; /* ✨分割线上下外边距，控制公告区块间距 */
 }
 </style>
 </head>
 <body>
 <h1>公告栏</h1>
 <div class="divider"></div>
+
 <h2>系统维护通知</h2>
 <p>尊敬的用户：</p>
-<p>您好。感谢您游玩 XenonXiangqi。为了保证游戏正常运营，我们将于北京时间2026年8月8日凌晨1时至4时对服务器进行维护保养，届时您将无法进入游戏。</p><p>特此通知。</p>
+<p>您好。感谢您游玩 XenonXiangqi。为保障游戏稳定运营，我们将于北京时间2026年8月8日凌晨1时至4时开展服务器维护工作，维护期间游戏服务器将关闭，您暂时无法登录进入游戏。</p>
+<p>由此给您带来的不便，敬请谅解。特此通知。</p>
+
 <div class="divider"></div>
+
 <h2>Beta1版本重磅发布！</h2>
-<p>经过我们十天的努力，第一个测试版制作完成了。</p>
+<p>经过开发团队十天的迭代打磨，游戏首个公开测试版本正式制作完成，欢迎各位体验测试。</p>
+
 <div class="divider"></div>
 </body>
 </html>
