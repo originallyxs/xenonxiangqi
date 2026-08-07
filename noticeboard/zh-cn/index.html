@@ -4,18 +4,30 @@
 <meta charset="utf-8">
 <title>公告栏</title>
 <style>
+@font-face {
+    font-family: 'customFont';
+    src: url('./your-font-regular.woff2') format('woff2');
+    font-weight: 400; /* 常规粗细 */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'customFont';
+    src: url('./your-font-bold.woff2') format('woff2');
+    font-weight: 700; /* 粗体 */
+    font-style: normal;
+}
+
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
 }
 html,body{
-  background:transparent; /* 背景完全透明，用于嵌入作品 */
-  color:#fff;
+  background:transparent; /* 背景透明，嵌入作品 */
+  color:#2196f3;
   padding:12px; /* 整体边距12px */
-  font-family:customFont, system-ui, sans-serif; /* 使用作品自定义字体 */
+  font-family:customFont, system-ui, sans-serif;
 }
-/* 两种字重：400常规 / 700粗体 */
 .font-normal{
   font-weight:400;
 }
@@ -32,7 +44,7 @@ html,body{
 }
 .divider{
   height:1px;
-  background:rgba(255,255,255,0.35); /*半透分割线，适配透明背景*/
+  background:rgba(255,255,255,0.35);
   margin:8px 0;
 }
 </style>
